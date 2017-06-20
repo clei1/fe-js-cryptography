@@ -21,15 +21,19 @@ The Atbash cipher is a very specific case of a substitution cipher where the let
 
 Because reversing the alphabet twice will get you actual alphabet, you can encipher and decipher a message using the exact same algorithm - so only one function needed here!
 
+```
 Plaintext: This is a secret message
 Ciphertext: Gsrh rh z hvxivg nvhhztv
+```
 
 ### Keyword Cipher
 The Keyword cipher is identical to the Caesar Cipher with the exception that the substitution alphabet used can be represented with a keyword (In this case, KEYWORD).
 
 To create a substitution alphabet from a keyword, you first write down the alphabet. Below this you write down the keyword (omitting duplicate letters) followed by the remaining unused letters of the alphabet.
 
+```
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 KEYWORDABCFGHIJLMNPQSTUVXZ
+```
 
 To encipher a plaintext message, you convert all letters from the top row to their corresponding letter on the bottom row (A to K, B to E, etc).
